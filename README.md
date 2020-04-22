@@ -4,7 +4,7 @@ This code helps you classify different alphabets of hindi language (Devanagiri).
 
 ![Devnagiri Characters](https://miro.medium.com/max/980/1*dmZC4dCbLiVJiJb2Zpuiaw.png)
 
-##**Code Requirements**
+##Code Requirements
 
 You can install Conda for python which resolves all the dependencies for machine learning.
 
