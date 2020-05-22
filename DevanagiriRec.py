@@ -16,7 +16,7 @@ def main():
                     24: '24_bha', 25: '25_ma', 26: '26_yaw', 27: '27_ra', 28: '28_la', 29: '29_waw', 30: '30_motosaw',
                     31: '31_petchiryakha',32: '32_patalosaw', 33: '33_ha',
                     34: '34_chhya', 35: '35_tra', 36: '36_gya', 37: 'CHECK'}
-    cap = cv2.VideoCapture(0)
+    cap =  cv2.VideoCapture(0)
     Lower_green = np.array([110, 50, 50])
     Upper_green = np.array([130, 255, 255])
     pred_class=0
@@ -34,7 +34,7 @@ def main():
         cnts = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)[1]
         center = None
         if len(cnts) >= 1:
-            contour = max(cnts, key=cv2.contourArea)
+            contour=max(cnts, key=cv2.contourArea)
             if cv2.contourArea(contour) > 250:
                 ((x, y), radius) = cv2.minEnclosingCircle(contour)
                 cv2.circle(img, (int(x), int(y)), int(radius), (0, 255, 255), 2)
