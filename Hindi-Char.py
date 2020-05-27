@@ -25,7 +25,7 @@ def keras_model(image_x,image_y):
     #checkpoint2 = ModelCheckpoint(filepath, monitor='val_loss', verbose=1, save_best_only=True, mode='min')
     callbacks_list = [checkpoint1]
 
-    return model, callbacks_list
+    return model,callbacks_list
 
 
 def main():
@@ -57,11 +57,11 @@ def main():
     image_x = 32
     image_y = 32
 
-    train_y = np_utils.to_categorical(Y_train)
-    test_y = np_utils.to_categorical(Y_test)
-    train_y = train_y.reshape(train_y.shape[1], train_y.shape[2])
-    test_y = test_y.reshape(test_y.shape[1], test_y.shape[2])
-    X_train = X_train.reshape(X_train.shape[0], 32, 32, 1)
+    train_y =np_utils.to_categorical(Y_train)
+    test_y =np_utils.to_categorical(Y_test)
+    train_y =train_y.reshape(train_y.shape[1], train_y.shape[2])
+    test_y =test_y.reshape(test_y.shape[1], test_y.shape[2])
+    X_train =X_train.reshape(X_train.shape[0], 32, 32, 1)
 
     print("X_train shape: " + str(X_train.shape))
     print("Y_train shape: " + str(train_y.shape))
