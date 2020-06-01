@@ -14,9 +14,9 @@ This code successfully recognizes hindi characters.
 
 ## **Technique Used**
 
-I have used convolutional neural networks. I am using Tensorflow as the framework and Keras API for providing a high level of abstraction.
+I have used convolutional neural networks.I am using Tensorflow as the framework and Keras API for providing a high level of abstraction.
 
 ## **Python Implementation**
 
-Dataset- DHCD (Devnagari Character Dataset)
+Dataset-DHCD (Devnagari Character Dataset)
 Images of size 32 X 32
