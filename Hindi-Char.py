@@ -30,12 +30,12 @@ def keras_model(image_x,image_y):
 
 def main():
     data = pd.read_csv("data.csv")
-    dataset = np.array(data)
+    dataset=np.array(data)
     np.random.shuffle(dataset)
-    X = dataset
-    Y = dataset
-    X = X[:, 0:1024]
-    Y = Y[:, 1024]
+    X=dataset
+    Y=dataset
+    X=X[:, 0:1024]
+    Y=Y[:, 1024]
 
     X_train = X[0:70000, :]
     X_train = X_train / 255.
