@@ -18,5 +18,5 @@ I have used convolutional neural networks.I am using Tensorflow as the framework
 
 ## **Python Implementation**
 
-Dataset-DHCD (Devnagari Character Dataset)
+Dataset-DHCD (Devnagari Hindi Character Dataset)
 Images of size 32 X 32
