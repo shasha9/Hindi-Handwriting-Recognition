@@ -29,7 +29,7 @@ def keras_model(image_x,image_y):
 
 
 def main():
-    data = pd.read_csv("data.csv")
+    data =pd.read_csv("data.csv")
     dataset=np.array(data)
     np.random.shuffle(dataset)
     X=dataset
